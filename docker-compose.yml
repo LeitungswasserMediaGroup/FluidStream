@@ -1,0 +1,11 @@
+version: '3'
+services:
+  fluidstream-nginx:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: fluidstream-nginx
+    ports:
+      - 0.0.0.0:1935:1935
+      - 0.0.0.0:8080:80
+    restart: unless-stopped
