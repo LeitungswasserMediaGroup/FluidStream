@@ -1,2 +1,0 @@
-# quality-streaming-server
-
